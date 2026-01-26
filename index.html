@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HomerCorp - Desenvolvimento SaaS Profissional, APIs e Consultoria Técnica">
+    <title>HomerCorp - Desenvolvimento SaaS & Soluções Técnicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                <span class="logo-text">HomerCorp</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services" data-i18n="nav.services">Serviços</a></li>
+                <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
+                <li class="lang-selector">
+                    <button class="lang-btn" onclick="setLanguage('pt-BR')" id="btn-pt">PT</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" onclick="setLanguage('en')" id="btn-en">EN</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 data-i18n="hero.title">Construindo o Futuro do SaaS</h1>
+                <p class="hero-tagline" data-i18n="hero.tagline">Desenvolvimento de software profissional, APIs e consultoria técnica para transformar suas ideias em realidade.</p>
+                <a href="#contact" class="btn btn-primary" data-i18n="hero.cta">Entre em Contato</a>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 data-i18n="services.title">Nossos Serviços</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="services.saas.title">Desenvolvimento SaaS</h3>
+                        <p data-i18n="services.saas.desc">Desenvolvimento completo de aplicações software-as-a-service. Do conceito à implantação, construímos plataformas escaláveis, seguras e intuitivas adaptadas às necessidades do seu negócio.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="services.api.title">APIs & Integrações</h3>
+                        <p data-i18n="services.api.desc">Desenvolvimento de APIs customizadas e integrações com terceiros. Conectamos seus sistemas, automatizamos fluxos de trabalho e habilitamos troca de dados entre plataformas.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="services.consulting.title">Consultoria Técnica</h3>
+                        <p data-i18n="services.consulting.desc">Orientação especializada em arquitetura, seleção de tecnologias e melhores práticas. Ajudamos você a tomar decisões informadas e otimizar seu processo de desenvolvimento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 data-i18n="about.title">Sobre a HomerCorp</h2>
+                <div class="about-content">
+                    <p data-i18n="about.p1">A HomerCorp é uma empresa de desenvolvimento de software especializada em construir aplicações SaaS modernas e fornecer soluções técnicas para empresas de todos os tamanhos.</p>
+                    <p data-i18n="about.p2">Com expertise em desenvolvimento full-stack, infraestrutura em nuvem e integrações de sistemas, entregamos software de alta qualidade que ajuda nossos clientes a alcançar seus objetivos. Nosso compromisso com a excelência e satisfação do cliente guia tudo o que fazemos.</p>
+                    <p data-i18n="about.p3">Trabalhamos com startups e empresas estabelecidas, fornecendo a expertise técnica necessária para transformar ideias em produtos de sucesso.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 data-i18n="contact.title">Fale Conosco</h2>
+                <div class="contact-content">
+                    <p data-i18n="contact.desc">Pronto para iniciar seu projeto? Tem perguntas sobre nossos serviços? Adoraríamos ouvir você.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <a href="mailto:contact@homercorp.xyz">contact@homercorp.xyz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">HomerCorp</span>
+                    <p>&copy; 2025 HomerCorp. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
+                </div>
+                <div class="footer-links">
+                    <a href="terms.html" data-i18n="footer.terms">Termos de Serviço</a>
+                    <a href="privacy.html" data-i18n="footer.privacy">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+</body>
+</html>
