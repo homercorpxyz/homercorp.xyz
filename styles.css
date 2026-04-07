@@ -309,6 +309,12 @@ a:hover {
     margin-bottom: 0;
 }
 
+.footer-cnpj {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-top: 0.25rem;
+}
+
 .footer-links {
     display: flex;
     gap: var(--spacing-lg);
