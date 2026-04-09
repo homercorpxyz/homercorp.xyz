@@ -10,13 +10,16 @@
     <meta property="og:url" content="https://homercorp.xyz">
     <meta property="og:type" content="website">
     <title>HomerCorp - Desenvolvimento SaaS & Soluções Técnicas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
         <nav class="nav container">
             <div class="logo">
-                <span class="logo-text">HomerCorp</span>
+                <span class="logo-text">Homer<span class="logo-accent">Corp</span></span>
             </div>
             <ul class="nav-links">
                 <li><a href="#services" data-i18n="nav.services">Serviços</a></li>
@@ -33,20 +36,95 @@
 
     <main>
         <section class="hero">
-            <div class="container">
-                <h1 data-i18n="hero.title">Construindo o Futuro do SaaS</h1>
-                <p class="hero-tagline" data-i18n="hero.tagline">Desenvolvimento de software profissional, APIs e consultoria técnica para transformar suas ideias em realidade.</p>
-                <a href="#contact" class="btn btn-primary" data-i18n="hero.cta">Entre em Contato</a>
+            <div class="hero-bg">
+                <svg class="hero-pattern" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#0a0f1a;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#1a1f3a;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.3" />
+                            <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.1" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grad1)"/>
+                    <line x1="0" y1="100" x2="1200" y2="100" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                    <line x1="0" y1="200" x2="1200" y2="200" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                    <line x1="0" y1="300" x2="1200" y2="300" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                    <line x1="0" y1="400" x2="1200" y2="400" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                    <line x1="0" y1="500" x2="1200" y2="500" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                    <line x1="200" y1="0" x2="200" y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                    <line x1="400" y1="0" x2="400" y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                    <line x1="600" y1="0" x2="600" y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                    <line x1="800" y1="0" x2="800" y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                    <line x1="1000" y1="0" x2="1000" y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                    <circle cx="900" cy="150" r="120" fill="none" stroke="rgba(59,130,246,0.08)" stroke-width="1"/>
+                    <circle cx="900" cy="150" r="80" fill="none" stroke="rgba(59,130,246,0.05)" stroke-width="1"/>
+                    <circle cx="900" cy="150" r="40" fill="rgba(59,130,246,0.03)"/>
+                    <rect x="100" y="350" width="200" height="200" rx="8" fill="none" stroke="rgba(6,182,212,0.06)" stroke-width="1" transform="rotate(-15 200 450)"/>
+                    <polygon points="700,400 750,320 800,400" fill="none" stroke="rgba(59,130,246,0.06)" stroke-width="1"/>
+                    <ellipse cx="600" cy="300" rx="400" ry="200" fill="url(#accent-grad)" opacity="0.4"/>
+                    <circle cx="350" cy="120" r="2" fill="rgba(59,130,246,0.2)"/>
+                    <circle cx="500" cy="80" r="1.5" fill="rgba(6,182,212,0.2)"/>
+                    <circle cx="1050" cy="350" r="2" fill="rgba(59,130,246,0.15)"/>
+                    <circle cx="150" cy="200" r="1.5" fill="rgba(6,182,212,0.15)"/>
+                    <circle cx="850" cy="450" r="2" fill="rgba(59,130,246,0.1)"/>
+                </svg>
+            </div>
+            <div class="container hero-content">
+                <div class="hero-badge" data-animate>
+                    <span class="badge-dot"></span>
+                    <span data-i18n="hero.badge">Provedora de Tecnologia Meta</span>
+                </div>
+                <h1 data-animate data-delay="1">
+                    <span data-i18n="hero.title1">Construindo o</span><br>
+                    <span class="hero-highlight" data-i18n="hero.title2">Futuro do SaaS</span>
+                </h1>
+                <p class="hero-tagline" data-animate data-delay="2" data-i18n="hero.tagline">Desenvolvimento de software profissional, APIs e consultoria técnica para transformar suas ideias em realidade.</p>
+                <a href="#contact" class="btn btn-primary" data-animate data-delay="3" data-i18n="hero.cta">Entre em Contato</a>
             </div>
         </section>
 
-        <section id="services" class="services">
+        <section class="metrics" data-animate-section>
             <div class="container">
-                <h2 data-i18n="services.title">Nossos Serviços</h2>
+                <div class="metrics-grid">
+                    <div class="metric-item" data-animate>
+                        <span class="metric-value">5+</span>
+                        <span class="metric-label" data-i18n="metrics.projects">Projetos Entregues</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item" data-animate data-delay="1">
+                        <span class="metric-value">99.9%</span>
+                        <span class="metric-label" data-i18n="metrics.uptime">Uptime</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item" data-animate data-delay="2">
+                        <span class="metric-value">
+                            <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+                        </span>
+                        <span class="metric-label" data-i18n="metrics.meta">Provedora de Tecnologia Meta</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item" data-animate data-delay="3">
+                        <span class="metric-value">24/7</span>
+                        <span class="metric-label" data-i18n="metrics.monitoring">Monitoramento</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services" data-animate-section>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag" data-i18n="services.tag">O que fazemos</span>
+                    <h2 data-i18n="services.title">Nossos Serviços</h2>
+                </div>
                 <div class="services-grid">
-                    <div class="service-card">
+                    <div class="service-card" data-animate>
+                        <div class="service-number">01</div>
                         <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                                 <line x1="8" y1="21" x2="16" y2="21"></line>
                                 <line x1="12" y1="17" x2="12" y2="21"></line>
@@ -55,9 +133,10 @@
                         <h3 data-i18n="services.saas.title">Desenvolvimento SaaS</h3>
                         <p data-i18n="services.saas.desc">Desenvolvimento completo de aplicações software-as-a-service. Do conceito à implantação, construímos plataformas escaláveis, seguras e intuitivas adaptadas às necessidades do seu negócio.</p>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card" data-animate data-delay="1">
+                        <div class="service-number">02</div>
                         <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <polyline points="16 18 22 12 16 6"></polyline>
                                 <polyline points="8 6 2 12 8 18"></polyline>
                             </svg>
@@ -65,12 +144,13 @@
                         <h3 data-i18n="services.api.title">APIs & Integrações</h3>
                         <p data-i18n="services.api.desc">Desenvolvimento de APIs customizadas e integrações com terceiros. Conectamos seus sistemas, automatizamos fluxos de trabalho e habilitamos troca de dados entre plataformas.</p>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card" data-animate data-delay="2">
+                        <div class="service-number">03</div>
                         <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <line x1="12" y1="16" x2="12" y2="12"></line>
-                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
                             </svg>
                         </div>
                         <h3 data-i18n="services.consulting.title">Consultoria Técnica</h3>
@@ -80,26 +160,60 @@
             </div>
         </section>
 
-        <section id="about" class="about">
+        <section id="about" class="about" data-animate-section>
             <div class="container">
-                <h2 data-i18n="about.title">Sobre a HomerCorp</h2>
-                <div class="about-content">
-                    <p data-i18n="about.p1">A HomerCorp é uma empresa de desenvolvimento de software especializada em construir aplicações SaaS modernas e fornecer soluções técnicas para empresas de todos os tamanhos.</p>
-                    <p data-i18n="about.p2">Com expertise em desenvolvimento full-stack, infraestrutura em nuvem e integrações de sistemas, entregamos software de alta qualidade que ajuda nossos clientes a alcançar seus objetivos. Nosso compromisso com a excelência e satisfação do cliente guia tudo o que fazemos.</p>
-                    <p data-i18n="about.p3">Trabalhamos com startups e empresas estabelecidas, fornecendo a expertise técnica necessária para transformar ideias em produtos de sucesso.</p>
-                    <p data-i18n="about.p4">Somos Provedora de Tecnologia certificada pela Meta (Meta Tech Partner), com integração oficial à WhatsApp Business API.</p>
+                <div class="about-layout">
+                    <div class="about-content" data-animate>
+                        <span class="section-tag" data-i18n="about.tag">Quem somos</span>
+                        <h2 data-i18n="about.title">Sobre a HomerCorp</h2>
+                        <p data-i18n="about.p1">A HomerCorp é uma empresa de desenvolvimento de software especializada em construir aplicações SaaS modernas e fornecer soluções técnicas para empresas de todos os tamanhos.</p>
+                        <p data-i18n="about.p2">Com expertise em desenvolvimento full-stack, infraestrutura em nuvem e integrações de sistemas, entregamos software de alta qualidade que ajuda nossos clientes a alcançar seus objetivos. Nosso compromisso com a excelência e satisfação do cliente guia tudo o que fazemos.</p>
+                        <p data-i18n="about.p3">Trabalhamos com startups e empresas estabelecidas, fornecendo a expertise técnica necessária para transformar ideias em produtos de sucesso.</p>
+                    </div>
+                    <div class="about-visual" data-animate data-delay="1">
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+                            </div>
+                            <h4 data-i18n="about.card.title">Provedora de Tecnologia Meta</h4>
+                            <p data-i18n="about.card.desc">Provedora de Tecnologia certificada pela Meta com integração oficial à WhatsApp Business API.</p>
+                        </div>
+                        <div class="about-stack">
+                            <div class="stack-item">
+                                <span class="stack-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                </span>
+                                <span>Full-Stack Development</span>
+                            </div>
+                            <div class="stack-item">
+                                <span class="stack-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                                </span>
+                                <span>Cloud Infrastructure</span>
+                            </div>
+                            <div class="stack-item">
+                                <span class="stack-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                                </span>
+                                <span>System Integrations</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact">
+        <section id="contact" class="contact" data-animate-section>
             <div class="container">
-                <h2 data-i18n="contact.title">Fale Conosco</h2>
-                <div class="contact-content">
-                    <p data-i18n="contact.desc">Pronto para iniciar seu projeto? Tem perguntas sobre nossos serviços? Adoraríamos ouvir você.</p>
-                    <div class="contact-info">
+                <div class="contact-layout">
+                    <div class="contact-text" data-animate>
+                        <span class="section-tag" data-i18n="contact.tag">Vamos conversar</span>
+                        <h2 data-i18n="contact.title">Fale Conosco</h2>
+                        <p data-i18n="contact.desc">Pronto para iniciar seu projeto? Tem perguntas sobre nossos serviços? Adoraríamos ouvir você.</p>
+                    </div>
+                    <div class="contact-card" data-animate data-delay="1">
                         <div class="contact-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                 <polyline points="22,6 12,13 2,6"></polyline>
                             </svg>
@@ -115,7 +229,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <span class="logo-text">HomerCorp</span>
+                    <span class="logo-text">Homer<span class="logo-accent">Corp</span></span>
                     <p>&copy; 2025 HomerCorp. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
                     <p class="footer-cnpj">CNPJ: 65.977.227/0001-37</p>
                 </div>
@@ -128,5 +242,34 @@
     </footer>
 
     <script src="i18n.js"></script>
+    <script>
+    // Scroll animations with Intersection Observer
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const elements = entry.target.querySelectorAll('[data-animate]');
+                elements.forEach(el => {
+                    const delay = el.getAttribute('data-delay') || 0;
+                    setTimeout(() => el.classList.add('animate-in'), delay * 120);
+                });
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Observe sections
+    document.querySelectorAll('[data-animate-section]').forEach(s => observer.observe(s));
+
+    // Hero animations (immediate)
+    window.addEventListener('DOMContentLoaded', () => {
+        const heroEls = document.querySelectorAll('.hero [data-animate]');
+        heroEls.forEach(el => {
+            const delay = el.getAttribute('data-delay') || 0;
+            setTimeout(() => el.classList.add('animate-in'), 200 + delay * 150);
+        });
+    });
+    </script>
 </body>
 </html>

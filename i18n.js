@@ -6,11 +6,20 @@ const translations = {
         'nav.contact': 'Contato',
 
         // Hero
-        'hero.title': 'Construindo o Futuro do SaaS',
+        'hero.badge': 'Provedora de Tecnologia Meta',
+        'hero.title1': 'Construindo o',
+        'hero.title2': 'Futuro do SaaS',
         'hero.tagline': 'Desenvolvimento de software profissional, APIs e consultoria técnica para transformar suas ideias em realidade.',
         'hero.cta': 'Entre em Contato',
 
+        // Metrics
+        'metrics.projects': 'Projetos Entregues',
+        'metrics.uptime': 'Uptime',
+        'metrics.meta': 'Provedora de Tecnologia Meta',
+        'metrics.monitoring': 'Monitoramento',
+
         // Services
+        'services.tag': 'O que fazemos',
         'services.title': 'Nossos Serviços',
         'services.saas.title': 'Desenvolvimento SaaS',
         'services.saas.desc': 'Desenvolvimento completo de aplicações software-as-a-service. Do conceito à implantação, construímos plataformas escaláveis, seguras e intuitivas adaptadas às necessidades do seu negócio.',
@@ -20,13 +29,17 @@ const translations = {
         'services.consulting.desc': 'Orientação especializada em arquitetura, seleção de tecnologias e melhores práticas. Ajudamos você a tomar decisões informadas e otimizar seu processo de desenvolvimento.',
 
         // About
+        'about.tag': 'Quem somos',
         'about.title': 'Sobre a HomerCorp',
         'about.p1': 'A HomerCorp é uma empresa de desenvolvimento de software especializada em construir aplicações SaaS modernas e fornecer soluções técnicas para empresas de todos os tamanhos.',
         'about.p2': 'Com expertise em desenvolvimento full-stack, infraestrutura em nuvem e integrações de sistemas, entregamos software de alta qualidade que ajuda nossos clientes a alcançar seus objetivos. Nosso compromisso com a excelência e satisfação do cliente guia tudo o que fazemos.',
         'about.p3': 'Trabalhamos com startups e empresas estabelecidas, fornecendo a expertise técnica necessária para transformar ideias em produtos de sucesso.',
-        'about.p4': 'Somos Provedora de Tecnologia certificada pela Meta (Meta Tech Partner), com integração oficial à WhatsApp Business API.',
+        'about.p4': 'Somos Provedora de Tecnologia verificada pela Meta, com integração oficial à WhatsApp Business API.',
+        'about.card.title': 'Provedora de Tecnologia Meta',
+        'about.card.desc': 'Empresa verificada pela Meta como Provedora de Tecnologia, com integração oficial à WhatsApp Business API.',
 
         // Contact
+        'contact.tag': 'Vamos conversar',
         'contact.title': 'Fale Conosco',
         'contact.desc': 'Pronto para iniciar seu projeto? Tem perguntas sobre nossos serviços? Adoraríamos ouvir você.',
 
@@ -214,11 +227,20 @@ const translations = {
         'nav.contact': 'Contact',
 
         // Hero
-        'hero.title': 'Building the Future of SaaS',
+        'hero.badge': 'Meta Technology Provider',
+        'hero.title1': 'Building the',
+        'hero.title2': 'Future of SaaS',
         'hero.tagline': 'Professional software development, APIs, and technical consulting to bring your ideas to life.',
         'hero.cta': 'Get in Touch',
 
+        // Metrics
+        'metrics.projects': 'Projects Delivered',
+        'metrics.uptime': 'Uptime',
+        'metrics.meta': 'Meta Technology Provider',
+        'metrics.monitoring': 'Monitoring',
+
         // Services
+        'services.tag': 'What we do',
         'services.title': 'Our Services',
         'services.saas.title': 'SaaS Development',
         'services.saas.desc': 'End-to-end development of software-as-a-service applications. From concept to deployment, we build scalable, secure, and user-friendly platforms tailored to your business needs.',
@@ -228,13 +250,17 @@ const translations = {
         'services.consulting.desc': 'Expert guidance on architecture, technology stack selection, and best practices. We help you make informed decisions and optimize your development process.',
 
         // About
+        'about.tag': 'Who we are',
         'about.title': 'About HomerCorp',
         'about.p1': 'HomerCorp is a software development company specializing in building modern SaaS applications and providing technical solutions for businesses of all sizes.',
         'about.p2': 'With expertise in full-stack development, cloud infrastructure, and system integrations, we deliver high-quality software that helps our clients achieve their goals. Our commitment to excellence and customer satisfaction drives everything we do.',
         'about.p3': 'We work with startups and established companies alike, providing the technical expertise needed to turn ideas into successful products.',
-        'about.p4': 'We are a certified Meta Tech Partner, with official integration to the WhatsApp Business API.',
+        'about.p4': 'We are a verified Meta Technology Provider, with official WhatsApp Business API integration.',
+        'about.card.title': 'Meta Technology Provider',
+        'about.card.desc': 'Verified by Meta as a Technology Provider, with official WhatsApp Business API integration.',
 
         // Contact
+        'contact.tag': 'Let\'s talk',
         'contact.title': 'Contact Us',
         'contact.desc': 'Ready to start your project? Have questions about our services? We\'d love to hear from you.',
 
