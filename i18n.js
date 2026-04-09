@@ -24,6 +24,7 @@ const translations = {
         'about.p1': 'A HomerCorp é uma empresa de desenvolvimento de software especializada em construir aplicações SaaS modernas e fornecer soluções técnicas para empresas de todos os tamanhos.',
         'about.p2': 'Com expertise em desenvolvimento full-stack, infraestrutura em nuvem e integrações de sistemas, entregamos software de alta qualidade que ajuda nossos clientes a alcançar seus objetivos. Nosso compromisso com a excelência e satisfação do cliente guia tudo o que fazemos.',
         'about.p3': 'Trabalhamos com startups e empresas estabelecidas, fornecendo a expertise técnica necessária para transformar ideias em produtos de sucesso.',
+        'about.p4': 'Somos Provedora de Tecnologia certificada pela Meta (Meta Tech Partner), com integração oficial à WhatsApp Business API.',
 
         // Contact
         'contact.title': 'Fale Conosco',
@@ -231,6 +232,7 @@ const translations = {
         'about.p1': 'HomerCorp is a software development company specializing in building modern SaaS applications and providing technical solutions for businesses of all sizes.',
         'about.p2': 'With expertise in full-stack development, cloud infrastructure, and system integrations, we deliver high-quality software that helps our clients achieve their goals. Our commitment to excellence and customer satisfaction drives everything we do.',
         'about.p3': 'We work with startups and established companies alike, providing the technical expertise needed to turn ideas into successful products.',
+        'about.p4': 'We are a certified Meta Tech Partner, with official integration to the WhatsApp Business API.',
 
         // Contact
         'contact.title': 'Contact Us',
